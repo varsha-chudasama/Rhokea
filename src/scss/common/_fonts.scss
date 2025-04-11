@@ -1,0 +1,35 @@
+// @font-face {
+//     font-family: "IBM Plex Sans";
+//     src: url('/wp-content/themes/canada/assets/font/IBM Plex Sans.ttf') format('truetype');
+//     font-style: normal;
+// }
+@font-face {
+    font-family: "parabolicatest-bold";
+    src: url("../../../public/assets/fonts/parabolicatest-bold.otf") format('opentype');
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "parabolicatest-medium";
+    src: url("../../../public/assets/fonts/parabolicatest-medium.otf") format('opentype');
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "parabolicatexttest-regular";
+    src: url("../../../public/assets/fonts/parabolicatexttest-regular.otf") format('opentype');
+    font-weight: 400;
+}
+
+
+.para-bold {
+    font-family: "parabolicatest-bold";
+}
+
+.para-med {
+    font-family: "parabolicatest-medium";
+}
+
+.para-reg {
+    font-family: "parabolicatexttest-regular";
+}
