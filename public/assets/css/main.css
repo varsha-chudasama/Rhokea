@@ -14484,6 +14484,7 @@ p {
 
 body {
   overflow-x: hidden;
+  background-color: #EDE8E3;
 }
 
 button:focus {
@@ -17811,6 +17812,11 @@ button,
 }
 .card-hover:hover .img {
   transform: scale(1.1);
+}
+
+.category-content-section .content-dec a {
+  font-family: "parabolicatest-medium";
+  color: #1C1C1C;
 }
 
 /*# sourceMappingURL=main.css.map */
