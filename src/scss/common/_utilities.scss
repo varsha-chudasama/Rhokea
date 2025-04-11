@@ -54,8 +54,6 @@
     color: $color-1C1C1C4D;
 }
 
-
-
 .bg-EDE8E3 {
     background-color: $color-EDE8E3;
 }
@@ -256,4 +254,191 @@
 
 .space-0_14 {
     letter-spacing: $space-0_14;
+}
+
+.radius32 {
+    border-radius: $radius32;
+}
+
+@include media-breakpoint-down(lg) {
+
+    .res-font12 {
+        font-size: $font12;
+    }
+
+    .res-font14 {
+        font-size: $font14;
+    }
+
+    .res-font16 {
+        font-size: $font16;
+    }
+
+    .res-font18 {
+        font-size: $font18;
+    }
+
+    .res-font20 {
+        font-size: $font20;
+    }
+
+    .res-font24 {
+        font-size: $font24;
+    }
+
+    .res-font26 {
+        font-size: $font26;
+    }
+
+    .res-font30 {
+        font-size: $font30;
+    }
+
+    .res-font32 {
+        font-size: $font32;
+    }
+
+    .res-font36 {
+        font-size: $font36;
+    }
+
+    .res-font40 {
+        font-size: $font40;
+    }
+
+    .res-font50 {
+        font-size: $font50;
+    }
+
+    .res-font60 {
+        font-size: $font60;
+    }
+
+    .res-font15 {
+        font-size: $res-font15;
+    }
+
+    .res-font10 {
+        font-size: $res-font10;
+    }
+
+    .res-font13 {
+        font-size: $res-font13;
+    }
+
+    .res-font28 {
+        font-size: $res-font28;
+    }
+
+    .res-font18 {
+        font-size: $res-font18;
+    }
+
+    .res-leading10 {
+        line-height: $leading10;
+    }
+    
+    .res-leading18 {
+        line-height: $leading18;
+    }
+    
+    .res-leading26 {
+        line-height: $leading26;
+    }
+    
+    .res-leading28 {
+        line-height: $leading28;
+    }
+    
+    .res-leading31 {
+        line-height: $leading31;
+    }
+    
+    .res-leading38 {
+        line-height: $leading38;
+    }
+    
+    .res-leading42 {
+        line-height: $leading42;
+    }
+    
+    .res-leading50 {
+        line-height: $leading50;
+    }
+    
+    .res-leading52 {
+        line-height: $leading52;
+    }
+    
+    .res-leading62 {
+        line-height: $leading62;
+    }
+
+    .res-space-0_72 {
+        letter-spacing: $space-0_72;
+    }
+    
+    .res-space-0_64 {
+        letter-spacing: $space-0_64;
+    }
+    
+    .res-space-0_6 {
+        letter-spacing: $space-0_6;
+    }
+    
+    .res-space-0_56 {
+        letter-spacing: $space-0_56;
+    }
+    
+    .res-space-0_52 {
+        letter-spacing: $space-0_52;
+    }
+    
+    .res-space-0_5 {
+        letter-spacing: $space-0_5;
+    }
+    
+    .res-space-0_32 {
+        letter-spacing: $space-0_32;
+    }
+    
+    .res-space-0_3 {
+        letter-spacing: $space-0_3;
+    }
+    
+    .res-space-0_28 {
+        letter-spacing: $space-0_28;
+    }
+    
+    .res-space-0_24 {
+        letter-spacing: $space-0_24;
+    }
+    
+    .res-space-0_2 {
+        letter-spacing: $space-0_2;
+    }
+    
+    .res-space-0_16 {
+        letter-spacing: $space-0_16;
+    }
+    
+    .res-space-0_14 {
+        letter-spacing: $space-0_14;
+    }
+
+    .res-space-0_26 {
+        letter-spacing: $res-space0_26;
+    }
+
+    .res-space-0_28 {
+        letter-spacing: $res-space0_28;
+    }
+
+    .res-space-0_36 {
+        letter-spacing: $res-space0_36;
+    }
+
+    .res-space-0_12 {
+        letter-spacing: $res-space0_12;
+    }
 }

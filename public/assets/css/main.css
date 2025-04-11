@@ -12,6 +12,9 @@
 ******************************* LETTER SPACING *******************************
 *******************************************************************************/
 /*******************************************************************************
+******************************* RADIUS ****************************
+*******************************************************************************/
+/*******************************************************************************
 ******************************* ANIMATION VARIABLES ****************************
 *******************************************************************************/
 /*!
@@ -14457,6 +14460,9 @@ progress {
 ******************************* LETTER SPACING *******************************
 *******************************************************************************/
 /*******************************************************************************
+******************************* RADIUS ****************************
+*******************************************************************************/
+/*******************************************************************************
 ******************************* ANIMATION VARIABLES ****************************
 *******************************************************************************/
 body,
@@ -17539,6 +17545,9 @@ textarea {
 ******************************* LETTER SPACING *******************************
 *******************************************************************************/
 /*******************************************************************************
+******************************* RADIUS ****************************
+*******************************************************************************/
+/*******************************************************************************
 ******************************* ANIMATION VARIABLES ****************************
 *******************************************************************************/
 .text-EDE8E3 {
@@ -17797,6 +17806,147 @@ textarea {
   letter-spacing: -0.14px;
 }
 
+.radius32 {
+  border-radius: 32px;
+}
+
+@media (max-width: 991.98px) {
+  .res-font12 {
+    font-size: 12px;
+  }
+  .res-font14 {
+    font-size: 14px;
+  }
+  .res-font16 {
+    font-size: 16px;
+  }
+  .res-font18 {
+    font-size: 18px;
+  }
+  .res-font20 {
+    font-size: 20px;
+  }
+  .res-font24 {
+    font-size: 24px;
+  }
+  .res-font26 {
+    font-size: 26px;
+  }
+  .res-font30 {
+    font-size: 30px;
+  }
+  .res-font32 {
+    font-size: 32px;
+  }
+  .res-font36 {
+    font-size: 36px;
+  }
+  .res-font40 {
+    font-size: 40px;
+  }
+  .res-font50 {
+    font-size: 50px;
+  }
+  .res-font60 {
+    font-size: 60px;
+  }
+  .res-font15 {
+    font-size: 15px;
+  }
+  .res-font10 {
+    font-size: 10px;
+  }
+  .res-font13 {
+    font-size: 13px;
+  }
+  .res-font28 {
+    font-size: 28px;
+  }
+  .res-font18 {
+    font-size: 18px;
+  }
+  .res-leading10 {
+    line-height: 10px;
+  }
+  .res-leading18 {
+    line-height: 18px;
+  }
+  .res-leading26 {
+    line-height: 26px;
+  }
+  .res-leading28 {
+    line-height: 28px;
+  }
+  .res-leading31 {
+    line-height: 31px;
+  }
+  .res-leading38 {
+    line-height: 38px;
+  }
+  .res-leading42 {
+    line-height: 42px;
+  }
+  .res-leading50 {
+    line-height: 50px;
+  }
+  .res-leading52 {
+    line-height: 52px;
+  }
+  .res-leading62 {
+    line-height: 62px;
+  }
+  .res-space-0_72 {
+    letter-spacing: -0.72px;
+  }
+  .res-space-0_64 {
+    letter-spacing: -0.64px;
+  }
+  .res-space-0_6 {
+    letter-spacing: -0.6px;
+  }
+  .res-space-0_56 {
+    letter-spacing: -0.56px;
+  }
+  .res-space-0_52 {
+    letter-spacing: -0.52px;
+  }
+  .res-space-0_5 {
+    letter-spacing: -0.5px;
+  }
+  .res-space-0_32 {
+    letter-spacing: -0.32px;
+  }
+  .res-space-0_3 {
+    letter-spacing: -0.3px;
+  }
+  .res-space-0_28 {
+    letter-spacing: -0.28px;
+  }
+  .res-space-0_24 {
+    letter-spacing: -0.24px;
+  }
+  .res-space-0_2 {
+    letter-spacing: -0.2px;
+  }
+  .res-space-0_16 {
+    letter-spacing: -0.16px;
+  }
+  .res-space-0_14 {
+    letter-spacing: -0.14px;
+  }
+  .res-space-0_26 {
+    letter-spacing: -0.26px;
+  }
+  .res-space-0_28 {
+    letter-spacing: -0.28px;
+  }
+  .res-space-0_36 {
+    letter-spacing: -0.36px;
+  }
+  .res-space-0_12 {
+    letter-spacing: -0.12px;
+  }
+}
 button,
 [type=button],
 [type=reset],
