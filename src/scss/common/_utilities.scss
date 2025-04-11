@@ -260,6 +260,10 @@
     border-radius: $radius32;
 }
 
+.opacity20{
+    opacity: $opacity20;
+}
+
 @include media-breakpoint-down(lg) {
 
     .res-font12 {
