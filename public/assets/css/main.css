@@ -17446,8 +17446,8 @@ textarea {
 }
 .container {
   max-width: 1440px;
-  padding-left: 60px;
-  padding-right: 60px;
+  padding-left: 40px;
+  padding-right: 40px;
 }
 @media (max-width: 991.98px) {
   .container {
@@ -17466,6 +17466,15 @@ textarea {
 
 .h-vh {
   height: 100vh;
+}
+
+.row {
+  margin-left: 0px !important;
+  margin-right: 0px !important;
+}
+.row > * {
+  padding-left: 0px !important;
+  padding-right: 0px !important;
 }
 
 .truncate {

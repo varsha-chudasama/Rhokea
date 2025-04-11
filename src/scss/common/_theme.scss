@@ -1,7 +1,7 @@
 .container {
   max-width: 1440px;
-  padding-left: 60px;
-  padding-right: 60px;
+  padding-left: 40px;
+  padding-right: 40px;
 
   @include media-breakpoint-down(lg) {
     padding-left: 22px;
@@ -19,6 +19,16 @@
 
 .h-vh {
   height: 100vh;
+}
+
+.row {
+  margin-left: 0px !important;
+  margin-right: 0px !important;
+
+  &>* {
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+  }
 }
 
 // TEXT OVERFLOW CSS
