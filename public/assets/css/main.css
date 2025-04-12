@@ -17956,6 +17956,28 @@ button,
   -webkit-appearance: none !important;
 }
 
+.btnA.btn-1C1C1C-btn {
+  background-color: #1C1C1C;
+  border: 1px solid transparent;
+}
+.btnA.btn-1C1C1C-btn:hover {
+  background-color: transparent;
+  border: 1px solid #1C1C1C;
+}
+
+input {
+  height: 48px;
+}
+input.dark-input {
+  background: rgba(237, 232, 227, 0.2);
+  color: #EDE8E3 !important;
+}
+input.dark-input::placeholder {
+  font-family: "parabolicatexttest-regular";
+  opacity: 1;
+  color: #EDE8E3 !important;
+}
+
 .card-hover .img {
   transform: scale(1);
   transition: 0.3s all ease-in-out;
@@ -17967,6 +17989,10 @@ button,
 .category-content-section .content-dec a {
   font-family: "parabolicatest-medium";
   color: #1C1C1C;
+}
+
+.account-create-section, .password-reset-section {
+  height: calc(100vh - 125px);
 }
 
 /*# sourceMappingURL=main.css.map */

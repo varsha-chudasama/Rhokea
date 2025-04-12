@@ -1,0 +1,14 @@
+input {
+    height: 48px;
+
+    &.dark-input {
+        background: rgba($color: $color-EDE8E3, $alpha: 0.2);
+        color: $color-EDE8E3!important; 
+
+        &::placeholder {
+            font-family: "parabolicatexttest-regular";
+            opacity: 1; 
+            color: $color-EDE8E3!important; 
+        }
+    }
+}

@@ -6,3 +6,16 @@ button,
     -moz-appearance: none !important;
     -webkit-appearance: none !important;
 }
+
+.btnA {
+    
+    &.btn-1C1C1C-btn {
+        background-color: $color-1C1C1C;
+        border: 1px solid transparent;
+
+        &:hover {
+            background-color: transparent;
+            border: 1px solid $color-1C1C1C;
+        }
+    }
+}
