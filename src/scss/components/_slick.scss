@@ -1,0 +1,27 @@
+.find-us-slider {
+    .slick-list {
+        margin-inline: -3px !important;
+
+        .slick-slide {
+            padding-inline: 3px !important;
+        }
+    }
+}
+
+.find-us-section {
+    .slick-arrows {
+
+        .prev-arrow,
+        .next-arrow {
+            height: 38px;
+            width: 38px;
+            background-color: rgba($color: $black, $alpha: 0.1);
+            filter: blur(7) brightness(-10px);
+
+            @include media-breakpoint-down(lg) {
+                height: 30px;
+                width: 30px;
+            }
+        }
+    }
+}

@@ -17458,8 +17458,8 @@ textarea {
 }
 @media (max-width: 991.98px) {
   .container {
-    padding-left: 22px;
-    padding-right: 22px;
+    padding-left: 11px;
+    padding-right: 11px;
   }
 }
 
@@ -17856,6 +17856,9 @@ textarea {
   .res-font10 {
     font-size: 10px;
   }
+  .res-font11 {
+    font-size: 11px;
+  }
   .res-font13 {
     font-size: 13px;
   }
@@ -17937,6 +17940,9 @@ textarea {
   .res-space-0_26 {
     letter-spacing: -0.26px;
   }
+  .res-space-0_22 {
+    letter-spacing: -0.22px;
+  }
   .res-space-0_28 {
     letter-spacing: -0.28px;
   }
@@ -17964,9 +17970,88 @@ button,
   transform: scale(1.1);
 }
 
+.find-us-cards {
+  height: 352px;
+}
+@media (max-width: 991.98px) {
+  .find-us-cards {
+    height: 136px;
+  }
+}
+
+.find-us-slider .slick-list {
+  margin-inline: -3px !important;
+}
+.find-us-slider .slick-list .slick-slide {
+  padding-inline: 3px !important;
+}
+
+.find-us-section .slick-arrows .prev-arrow,
+.find-us-section .slick-arrows .next-arrow {
+  height: 38px;
+  width: 38px;
+  background-color: rgba(0, 0, 0, 0.1);
+  filter: blur(7) brightness(-10px);
+}
+@media (max-width: 991.98px) {
+  .find-us-section .slick-arrows .prev-arrow,
+  .find-us-section .slick-arrows .next-arrow {
+    height: 30px;
+    width: 30px;
+  }
+}
+
 .category-content-section .content-dec a {
   font-family: "parabolicatest-medium";
   color: #1C1C1C;
+}
+.category-content-section .category-button {
+  height: 38px;
+  padding-inline: 20px;
+  border: 1px solid #1C1A1A;
+  margin-right: 15px;
+}
+@media (max-width: 991.98px) {
+  .category-content-section .category-button {
+    height: 30px;
+    margin-right: 10px;
+  }
+}
+.category-content-section .category-button:last-child {
+  margin-right: 0px !important;
+}
+
+.divider {
+  border: 1px solid rgba(28, 28, 28, 0.2);
+}
+
+.category-cards-section .switch-container {
+  height: 16px;
+}
+.category-cards-section .switch {
+  border-radius: 22px;
+  background-color: rgba(28, 28, 28, 0.1) !important;
+  width: 30px;
+  height: 16px;
+}
+.category-cards-section .switch input:checked + .slider {
+  transform: translateX(14px);
+}
+.category-cards-section .switch .slider {
+  transition: 0.4s;
+  height: 100%;
+  width: 100%;
+}
+.category-cards-section .switch .slider::before {
+  content: "";
+  position: absolute;
+  height: 12px;
+  width: 12px;
+  left: 2px;
+  bottom: 2px;
+  background-color: #1C1C1C;
+  transition: 0.4s;
+  border-radius: 50%;
 }
 
 /*# sourceMappingURL=main.css.map */

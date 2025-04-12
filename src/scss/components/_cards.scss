@@ -10,3 +10,11 @@
         }
     }
 }
+
+.find-us-cards {
+    height: 352px;
+
+    @include media-breakpoint-down(lg) {
+        height: 136px;
+    }
+}
