@@ -17778,6 +17778,10 @@ textarea {
   letter-spacing: -0.5px;
 }
 
+.space-0_4 {
+  letter-spacing: -0.4px;
+}
+
 .space-0_32 {
   letter-spacing: -0.32px;
 }
@@ -17975,6 +17979,9 @@ button,
 
 .hero-section {
   height: 100vh;
+}
+.hero-section .hero-content {
+  bottom: 132px;
 }
 
 /*# sourceMappingURL=main.css.map */

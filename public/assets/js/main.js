@@ -20433,7 +20433,12 @@ var Plugins = /*#__PURE__*/function () {
   }
   plugins_createClass(Plugins, [{
     key: "init",
-    value: function init() {}
+    value: function init() {
+      this.HeroSlider();
+    }
+  }, {
+    key: "HeroSlide",
+    value: function HeroSlide() {}
   }]);
   return Plugins;
 }();
