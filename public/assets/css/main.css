@@ -17956,11 +17956,14 @@ button,
   -webkit-appearance: none !important;
 }
 
-.btnA.btn-1C1C1C-btn {
+.btnX {
+  height: 48px;
+}
+.btnX.bg-1C1C1C-btn {
   background-color: #1C1C1C;
   border: 1px solid transparent;
 }
-.btnA.btn-1C1C1C-btn:hover {
+.btnX.bg-1C1C1C-btn:hover {
   background-color: transparent;
   border: 1px solid #1C1C1C;
 }
@@ -17968,14 +17971,23 @@ button,
 input {
   height: 48px;
 }
-input.dark-input {
+input.light-input {
   background: rgba(237, 232, 227, 0.2);
+  color: #EDE8E3 !important;
+}
+input.light-input::placeholder {
+  font-family: "parabolicatexttest-regular";
+  opacity: 1;
+  color: #EDE8E3 !important;
+}
+input.dark-input {
+  background: rgba(28, 28, 28, 0.2);
   color: #EDE8E3 !important;
 }
 input.dark-input::placeholder {
   font-family: "parabolicatexttest-regular";
   opacity: 1;
-  color: #EDE8E3 !important;
+  color: #1C1C1C !important;
 }
 
 .card-hover .img {
@@ -17993,6 +18005,13 @@ input.dark-input::placeholder {
 
 .account-create-section, .password-reset-section {
   height: calc(100vh - 125px);
+}
+
+.login-section {
+  height: 645px;
+}
+.login-section .login-img {
+  height: 645px;
 }
 
 /*# sourceMappingURL=main.css.map */

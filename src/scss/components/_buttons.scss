@@ -7,9 +7,10 @@ button,
     -webkit-appearance: none !important;
 }
 
-.btnA {
-    
-    &.btn-1C1C1C-btn {
+.btnX {
+    height: 48px;
+
+    &.bg-1C1C1C-btn {
         background-color: $color-1C1C1C;
         border: 1px solid transparent;
 
@@ -19,3 +20,7 @@ button,
         }
     }
 }
+
+.btnY {}
+
+.btnZ {}
