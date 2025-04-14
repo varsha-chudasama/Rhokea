@@ -18123,4 +18123,15 @@ input.light-input::placeholder {
   width: 20px;
 }
 
+.privacy-policy-section .left-content {
+  top: 170px;
+}
+.privacy-policy-section ul li.active a {
+  text-decoration: line-through !important;
+  color: #1C1C1C !important;
+}
+.privacy-policy-section .single-content:first-child {
+  padding-top: 0 !important;
+}
+
 /*# sourceMappingURL=main.css.map */
