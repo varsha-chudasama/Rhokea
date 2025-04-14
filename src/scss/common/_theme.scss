@@ -91,3 +91,13 @@
     -webkit-line-clamp: initial !important;
   }
 }
+
+.row3 {
+  margin-left: -3px !important;
+  margin-right: -3px !important;
+
+  &>* {
+    padding-left: 3px !important;
+    padding-right: 3px !important;
+  }
+}

@@ -1,29 +1,28 @@
 .find-us-slider {
-    .slick-list {
-        margin-inline: -3px !important;
+  .slick-list {
+    margin-inline: -3px !important;
 
-        .slick-slide {
-            padding-inline: 3px !important;
-        }
+    .slick-slide {
+      padding-inline: 3px !important;
     }
+  }
 }
 
 .find-us-section {
-    .slick-arrows {
+  .slick-arrows {
+    .prev-arrow,
+    .next-arrow {
+      height: 38px;
+      width: 38px;
+      background-color: rgba($color: $black, $alpha: 0.1);
+      filter: blur(7) brightness(-10px);
 
-        .prev-arrow,
-        .next-arrow {
-            height: 38px;
-            width: 38px;
-            background-color: rgba($color: $black, $alpha: 0.1);
-            filter: blur(7) brightness(-10px);
-
-            @include media-breakpoint-down(lg) {
-                height: 30px;
-                width: 30px;
-            }
-        }
+      @include media-breakpoint-down(lg) {
+        height: 30px;
+        width: 30px;
+      }
     }
+  }
 }
 .hero-section {
   .hero-slider {
@@ -48,9 +47,52 @@
         }
       }
     }
-    @include media-breakpoint-down(lg){
-        bottom: 63px;
-        
+    @include media-breakpoint-down(lg) {
+      bottom: 63px;
+    }
+  }
+}
+
+.shop-slider,
+.product-slider {
+  .slick-list {
+    margin-inline: -3px;
+
+    .slick-slide {
+      padding-inline: 3px;
+    }
+  }
+  @include media-breakpoint-down(lg) {
+    .slick-list {
+      overflow: visible;
+    }
+  }
+}
+
+.why-titanium-section {
+  .left-slider {
+    .slick-slide {
+      .left-text{
+        opacity: 40%;
+      }
+      &.slick-current{
+        .left-text{
+          opacity: 1;
+        }
+      }
+    }
+  }
+  .right-content {
+    .slick-list {
+      height: 100%;
+      .slick-track {
+        height: 100%;
+        .slick-slide {
+          & > * {
+            height: 100%;
+          }
+        }
+      }
     }
   }
 }

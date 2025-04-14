@@ -1,0 +1,49 @@
+.switch-container {
+    height: 16px;
+    &.active-title{
+        .left-title{
+         opacity: 1;   
+        }
+        .right-title{
+         opacity: 30%;   
+        }
+        &:has(input:checked){
+            .left-title{
+             opacity: 30%;   
+            }
+            .right-title{
+             opacity: 1;   
+            }
+        }
+         
+    }
+}
+
+.switch {
+    border-radius: 22px;
+    background-color: rgba($color: $color-1C1C1C, $alpha: 0.1) !important;
+    width: 30px;
+    height: 16px;
+
+    input:checked+.slider {
+        transform: translateX(14px);
+    }
+
+    .slider {
+        transition: .4s;
+        height: 100%;
+        width: 100%;
+
+        &::before {
+            content: "";
+            position: absolute;
+            height: 12px;
+            width: 12px;
+            left: 2px;
+            bottom: 2px;
+            background-color: $color-1C1C1C;
+            transition: .4s;
+            border-radius: 50%;
+        }
+    }
+}

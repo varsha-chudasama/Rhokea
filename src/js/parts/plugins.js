@@ -4,6 +4,8 @@ export class Plugins {
   init() {
     this.HeroSlider();
     this.FindUsSlider();
+    this.ShopSlider();
+    this.ProductSlider();
   }
   FindUsSlider() {
     $(".find-us-slider").slick({
@@ -65,5 +67,68 @@ export class Plugins {
       }
       initializeSlider(".hero-slider", ".hero-section .pagination-wrapper");
     });
+  }
+  ShopSlider() {
+    $(".shop-slider").slick({
+      slidesToShow: 6,
+      slidesPerRow: 1,
+      arrows: false,
+      dots: false,
+      responsive: [
+        {
+          breakpoint: 991,
+          settings: { slidesToShow: 5 },
+        },
+        {
+          breakpoint: 768,
+          settings: { slidesToShow: 4 },
+        },
+        {
+          breakpoint: 600,
+          settings: { slidesToShow: 3 },
+        },
+        {
+          breakpoint: 475,
+          settings: { slidesToShow: 2 },
+        },
+      ],
+    });
+  }
+  ProductSlider() {
+    $(".product-slider").slick({
+      slidesToShow: 4,
+      slidesPerRow: 1,
+      arrows: false,
+      dots: false,
+      responsive: [ 
+        {
+          breakpoint: 768,
+          settings: { slidesToShow: 3 },
+        },
+        
+        {
+          breakpoint: 475,
+          settings: { slidesToShow: 2 },
+        },
+      ],
+    });
+
+
+    $('.right-content').slick({
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      arrows: false,
+      fade: true,
+      asNavFor: '.left-slider'
+    });
+    $('.left-slider').slick({
+      slidesToShow: 5,
+      slidesToScroll: 1,
+      asNavFor: '.right-content',
+      vertical:true,
+      dots: false,
+      focusOnSelect: true
+    });
+      
   }
 }
