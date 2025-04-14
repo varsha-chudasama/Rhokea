@@ -104,3 +104,11 @@
     }
   }
 }
+
+.three-card-img {
+    height: 530px;
+
+    @include media-breakpoint-down(lg) {
+        height: 313px;
+    }
+}
