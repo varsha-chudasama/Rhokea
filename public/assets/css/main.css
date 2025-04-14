@@ -17484,6 +17484,15 @@ textarea {
   padding-right: 0px !important;
 }
 
+.row9 {
+  margin-left: -9px !important;
+  margin-right: -9px !important;
+}
+.row9 > * {
+  padding-left: 9px !important;
+  padding-right: 9px !important;
+}
+
 .truncate {
   overflow: hidden;
   text-overflow: ellipsis;
@@ -18016,6 +18025,25 @@ input.light-input::placeholder {
   opacity: 1;
   color: #EDE8E3 !important;
 }
+input.white-input {
+  background: rgba(255, 255, 255, 0.4);
+  color: #EDE8E3 !important;
+}
+input.white-input::placeholder {
+  font-family: "parabolicatexttest-regular";
+  opacity: 1;
+  color: #EDE8E3 !important;
+}
+
+textarea {
+  background: rgba(255, 255, 255, 0.4);
+  color: #EDE8E3 !important;
+}
+textarea::placeholder {
+  font-family: "parabolicatexttest-regular";
+  opacity: 1;
+  color: #EDE8E3 !important;
+}
 
 .card-hover .img {
   transform: scale(1);
@@ -18031,6 +18059,15 @@ input.light-input::placeholder {
 @media (max-width: 991.98px) {
   .find-us-cards {
     height: 136px;
+  }
+}
+
+.three-card-img {
+  height: 530px;
+}
+@media (max-width: 991.98px) {
+  .three-card-img {
+    height: 313px;
   }
 }
 
@@ -18116,11 +18153,16 @@ input.light-input::placeholder {
 .login-section {
   height: 645px;
 }
-.login-section .login-img {
-  height: 645px;
-}
 .login-section .check-icon {
   width: 20px;
+}
+@media (max-width: 991.98px) {
+  .login-section {
+    height: auto;
+  }
+  .login-section .login-img {
+    height: 530px !important;
+  }
 }
 
 .privacy-policy-section .left-content {
@@ -18130,8 +18172,32 @@ input.light-input::placeholder {
   text-decoration: line-through !important;
   color: #1C1C1C !important;
 }
+@media (max-width: 991.98px) {
+  .privacy-policy-section ul {
+    white-space: nowrap;
+    overflow: auto;
+  }
+}
 .privacy-policy-section .single-content:first-child {
   padding-top: 0 !important;
+}
+
+.social-bg {
+  height: 38px;
+  width: 38px;
+  border: 1px solid #EDE8E3;
+}
+.social-bg .social-img img {
+  width: 15px;
+}
+
+.contact-us-section {
+  height: calc(100vh - 125px);
+}
+@media (max-width: 991.98px) {
+  .contact-us-section {
+    height: 100vh;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */

@@ -22,4 +22,27 @@ input {
             color: $color-EDE8E3 !important;
         }
     }
+
+    &.white-input {
+        background: rgba($color: $white, $alpha: 0.4);
+        color: $color-EDE8E3 !important;
+
+        &::placeholder {
+            font-family: "parabolicatexttest-regular";
+            opacity: 1;
+            color: $color-EDE8E3 !important;
+        }
+    }
+}
+
+textarea {
+    background: rgba($color: $white, $alpha: 0.4);
+    color: $color-EDE8E3 !important;
+
+    &::placeholder {
+        font-family: "parabolicatexttest-regular";
+        opacity: 1;
+        color: $color-EDE8E3 !important;
+    }
+
 }

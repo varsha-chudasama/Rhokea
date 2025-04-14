@@ -1,7 +1,6 @@
 .privacy-policy-section {
     .left-content {
         top: 170px;
-
     }
 
     ul {
@@ -12,6 +11,11 @@
                     color: $color-1C1C1C!important;
                 }
             }
+        }
+
+        @include media-breakpoint-down(lg){
+            white-space: nowrap;
+            overflow: auto;
         }
     }
 

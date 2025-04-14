@@ -30,6 +30,15 @@
     padding-right: 0px !important;
   }
 }
+.row9 {
+  margin-left: -9px !important;
+  margin-right: -9px !important;
+
+  &>* {
+    padding-left: 9px !important;
+    padding-right: 9px !important;
+  }
+}
 
 // TEXT OVERFLOW CSS
 .truncate {

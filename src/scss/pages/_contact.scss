@@ -1,0 +1,21 @@
+.social-bg {
+    height: 38px;
+    width: 38px;
+    border: 1px solid $color-EDE8E3;
+
+    .social-img {
+
+        img {
+            width: 15px;
+        }
+    }
+}
+
+.contact-us-section {
+    height: calc(100vh - 125px);
+
+    @include media-breakpoint-down(lg){
+        height: 100vh;
+
+    }
+}
