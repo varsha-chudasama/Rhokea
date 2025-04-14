@@ -17967,15 +17967,45 @@ button,
 }
 .btnX.bg-1C1C1C-btn {
   background-color: #1C1C1C;
-  border: 1px solid transparent;
+  border: 2px solid transparent;
 }
 .btnX.bg-1C1C1C-btn:hover {
+  background-color: transparent;
+  border: 2px solid #1C1C1C;
+}
+.btnX.bg-1C1C1C-black-btn {
+  background-color: #1C1C1C;
+  border: 2px solid transparent;
+}
+.btnX.bg-1C1C1C-black-btn:hover {
+  background-color: transparent;
+  border: 2px solid #1C1C1C;
+  color: #1C1C1C;
+}
+
+.btnY {
+  height: 56px;
+}
+.btnY.bg-1C1C1C-btn {
+  background-color: #1C1C1C;
+  border: 1px solid transparent;
+}
+.btnY.bg-1C1C1C-btn:hover {
   background-color: transparent;
   border: 1px solid #1C1C1C;
 }
 
 input {
   height: 48px;
+}
+input.dark-input {
+  background: rgba(28, 28, 28, 0.2);
+  color: #1C1C1C !important;
+}
+input.dark-input::placeholder {
+  font-family: "parabolicatexttest-regular";
+  opacity: 1;
+  color: #1C1C1C !important;
 }
 input.light-input {
   background: rgba(237, 232, 227, 0.2);
@@ -17985,15 +18015,6 @@ input.light-input::placeholder {
   font-family: "parabolicatexttest-regular";
   opacity: 1;
   color: #EDE8E3 !important;
-}
-input.dark-input {
-  background: rgba(28, 28, 28, 0.2);
-  color: #EDE8E3 !important;
-}
-input.dark-input::placeholder {
-  font-family: "parabolicatexttest-regular";
-  opacity: 1;
-  color: #1C1C1C !important;
 }
 
 .card-hover .img {
@@ -18097,6 +18118,9 @@ input.dark-input::placeholder {
 }
 .login-section .login-img {
   height: 645px;
+}
+.login-section .check-icon {
+  width: 20px;
 }
 
 /*# sourceMappingURL=main.css.map */

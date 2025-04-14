@@ -1,6 +1,17 @@
 input {
     height: 48px;
 
+    &.dark-input {
+        background: rgba($color: $color-1C1C1C, $alpha: 0.2);
+        color: $color-1C1C1C !important;
+
+        &::placeholder {
+            font-family: "parabolicatexttest-regular";
+            opacity: 1;
+            color: $color-1C1C1C !important;
+        }
+    }
+
     &.light-input {
         background: rgba($color: $color-EDE8E3, $alpha: 0.2);
         color: $color-EDE8E3 !important;
@@ -9,17 +20,6 @@ input {
             font-family: "parabolicatexttest-regular";
             opacity: 1;
             color: $color-EDE8E3 !important;
-        }
-    }
-
-    &.dark-input {
-        background: rgba($color: $color-1C1C1C, $alpha: 0.2);
-        color: $color-EDE8E3 !important;
-
-        &::placeholder {
-            font-family: "parabolicatexttest-regular";
-            opacity: 1;
-            color: $color-1C1C1C !important;
         }
     }
 }
