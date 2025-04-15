@@ -1,0 +1,43 @@
+.blog-open-content-section {
+    .blog-title {
+        background: rgba($color: $color-EDE8E3, $alpha: 0.1);
+    }
+
+    .left-content {
+        height: calc(100vh - 300px);
+        top: 170px;
+    }
+
+    .open-blog-img {
+        height: 700px;
+
+        @include media-breakpoint-down(lg){
+            height: 405px;
+        }
+    }
+
+    .video-content {
+        height: 545px;
+
+        @include media-breakpoint-down(lg){
+            height: 368px;
+        }
+
+        .bg-white {
+            opacity: 0.7;
+            width: 81px;
+            height: 81px;
+            border-radius: 5px;
+        }
+
+        .play-btn {
+            width: 20px;
+        }
+    }
+}
+
+.play-button {
+    border-left: 24px solid #333;
+    border-top: 16px solid transparent;
+    border-bottom: 16px solid transparent;
+}

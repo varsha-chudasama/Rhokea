@@ -9,46 +9,167 @@
     <title>Home</title>
     <!-- Favicons -->
     <link rel="icon" href="assets/images/favicon.svg" sizes="32x32" type="image/png" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.css"
+        integrity="sha512-nNlU0WK2QfKsuEmdcTwkeh+lhGs6uyOxuUs+n+0oXSYDok5qy0EI0lt01ZynHq6+p/tbgpZ7P+yUb+r71wqdXg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- Bootstrap core CSS -->
     <link href="assets/css/main.css" rel="stylesheet" />
 </head>
 
 <body>
     <main>
-        <section class="blog-open-content-section bg-1C1C1C dpt-160">
+        <section class="blog-open-content-section bg-1C1C1C dpt-160 tpt-155">
             <div class="container">
                 <div class="row">
-                    <div class="col-3 position-sticky top-0">
-                        <div class="">
-                            <a href="">BACK TO ALL</a>
-                        </div>
-                        <div class="">
-                            <div class="">
-                                Share this post
+                    <div class="col-lg-2 col-12 left-content position-sticky p-initial">
+                        <div class="d-flex justify-content-between flex-column h-100">
+                            <div class="d-inline-flex">
+                                <a class="para-bold font14 leading26 text-EDE8E3" href="">BACK TO ALL</a>
                             </div>
                             <div class="">
+                                <div class="para-reg font14 leading26 text-EDE8E3">
+                                    Share this post
+                                </div>
+                                <div class="">
 
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-6">
-                        <div class="">
-                            FILTER TAG
+                    <div class="col-lg-9 col-12 pe-lg-5">
+                        <div class="pe-lg-5">
+                            <div class="blog-title para-med font12 leading26 text-EDE8E3 px-2 d-inline-flex dmb-25">
+                                FILTER TAG
+                            </div>
+                            <div class="col-lg-10 col-12 pe-lg-3">
+                                <div class="para-med font50 leading52 res-font30 res-leading38 text-EDE8E3 dmb-20 pe-5">
+                                    WHAT DO WE PASS ON? DANAE & HECTOR
+                                </div>
+                                <div class="para-reg font26 leading31 res-font20 res-leading26 text-EDE8E3 dmb-20">
+                                    During our chat at a London cafe, Danae shared what she has absorbed from mother
+                                    figures,
+                                    shaping her own journey into motherhood with son Hector.
+                                </div>
+                                <div class="para-reg font16 leading26 res-font14 res-leading24 text-EDE8E3 dmb-20">
+                                    At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis
+                                    praesentium
+                                    voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint
+                                    occaecati
+                                    cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia
+                                    animi,
+                                    id
+                                    est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita
+                                    distinctio.
+                                    Nam
+                                    libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus
+                                    id
+                                    quod
+                                    maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor
+                                    repellendus.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-12 pe-lg-5 dmt-45 dmb-60 tmt-45 tmb-60">
+                            <div class="open-blog-img pe-lg-5">
+                                <img class="w-100 h-100 object-cover" src="./assets/images/contact.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="col-lg-10 col-12 pe-lg-5">
+                            <div class="para-bold font16 leading26 text-EDE8E3 dmb-25">
+                                SUBHEADING
+                            </div>
+                            <div class="para-reg font16 leading26 text-EDE8E3">
+                                At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
+                                voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint
+                                occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt
+                                mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et
+                                expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque
+                                nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda
+                                est, omnis dolor repellendus.
+                            </div>
+                            <ul class="ps-lg-3 dmt-40 tmt-20">
+                                <li class="para-reg font16 leading26 text-EDE8E3 dmt-30">
+                                    Accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum
+                                    deleniti atque corrupti quos dolores et quas molestias excepturi sint
+                                </li>
+                                <li class="para-reg font16 leading26 text-EDE8E3 dmt-30">
+                                    Pccaecati cupiditate non provident, similique sunt in culpa qui officia deserunt
+                                    mollitia animi, id est laborum et dolorum fuga.Z
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="video-content col-lg-10 pe-lg-1 position-relative dmt-50 tmb-70 dmb-100">
+                            <img class="w-100 h-100 object-cover" src="./assets/images/contact.jpg" alt="">
+
+                            <div class="position-absolute top-left-center cursor-pointer">
+                                <!-- Fancybox for youtube -->
+                                <!-- <div data-type="iframe" data-fancybox="gallery" data-src="https://www.youtube.com/embed/w6uX9jamcwQ?si=hIRk454Q6AvyWNmS&autoplay=1"
+                                        class="video-btn position-relative bg-459070 d-flex justify-content-between align-items-center px-3">
+                                        <div class="video-bg-btn bg-white position-relative bg-0E2E33">
+                                            <div
+                                                class="position-absolute top-left-center play-button d-flex justify-content-center align-items-center play-btn">
+                                                <img src="" class="w-100" alt="">
+                                            </div>
+                                        </div>
+                                    </div> -->
+                                <!-- Fancybox for viemo  -->
+                                <!-- <div data-type="iframe" data-fancybox="gallery" data-src="https://player.vimeo.com/video/271551414?badge=0&autoplay=0&amp;player_id=0&amp;app_id=58479"
+                                        class="video-btn position-relative bg-459070 d-flex justify-content-between align-items-center px-3">
+                                        <div class="video-bg-btn bg-white position-relative bg-0E2E33">
+                                            <div
+                                                class="position-absolute top-left-center play-button d-flex justify-content-center align-items-center play-btn">
+                                                <img src="" class="w-100" alt="">
+                                            </div>
+                                        </div>
+                                    </div> -->
+                                <!-- Fancybox for video  -->
+                                <div data-type="video" data-fancybox="gallery"
+                                    data-src="./assets/video/terry_presley--muleshoe_timelapse.mp4"
+                                    class="video-btn position-relative bg-459070 d-flex justify-content-between align-items-center px-3">
+                                    <div class="video-bg-btn bg-white position-relative bg-0E2E33">
+                                        <div
+                                            class="position-absolute top-left-center play-button d-flex justify-content-center align-items-center play-btn">
+                                            <img src="" class="w-100" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-10 pe-lg-5">
+                            <div class="para-bold font16 leading26 text-EDE8E3 dmb-25">
+                                SUBHEADING
+                            </div>
+                            <div class="para-reg font16 leading26 text-EDE8E3">
+                                At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
+                                voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint
+                                occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt
+                                mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et
+                                expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque
+                                nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda
+                                est, omnis dolor repellendus.
+                            </div>
+                            <div class="dmt-30">
+                                <a class="para-bold font14 leading26 text-EDE8E3" href="">SHOP ALL</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-2 position-absolute end-0 me-5">
+                        <div>
+                            Featured
                         </div>
                         <div class="">
-                            WHAT DO WE PASS ON? DANAE & HECTOR
+                            <img src="./assets/images/earings.jpg" alt="...">
                         </div>
                         <div class="">
-                            During our chat at a London cafe, Danae shared what she has absorbed from mother figures,
-                            shaping her own journey into motherhood with son Hector.
-                        </div>
-                        <div class="">
-                            At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
-                            voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati
-                            cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id
-                            est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam
-                            libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod
-                            maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus.
+                            <div class="text-EDE8E3">
+                                Bold Teardrop Hoop Earrings
+                            </div>
+                            <div class="text-EDE8E3">
+                                £710.00
+                            </div>
+                            <div class="">
+                                <a class="text-EDE8E3" href="">VIEW PRODUCT</a>
+                            </div>
                         </div>
                     </div>
                 </div>
