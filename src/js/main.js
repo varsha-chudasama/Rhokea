@@ -3,13 +3,14 @@ import '@popperjs/core';
 import 'bootstrap/dist/js/bootstrap';
 import 'select2/dist/js/select2.min.js';
 import '../../node_modules/masonry-layout/dist/masonry.pkgd.min';
-
+import '../../node_modules/@fancyapps/fancybox/dist/jquery.fancybox.min';
 import { App } from './parts/app.js'
 import { Plugins } from './parts/plugins.js'
 import { Parts } from './parts/parts.js'
 import { Truncate } from './parts/truncate.js';
 import { Accordion } from './parts/accordion.js';
 import { Privacy } from './parts/privacy.js';
+import { Video } from './parts/video.js';
 
 
 // export for others scripts to use
@@ -44,6 +45,9 @@ $(function () {
 
   window.privacy = new Privacy();
   window.privacy.init();
+
+  window.video = new Video();
+  window.video.init();
 });
 
 // ===========================================================================
