@@ -266,6 +266,9 @@
 .opacity20{
     opacity: $opacity20;
 }
+.opacity30{
+    opacity: $opacity30;
+}
 
 @include media-breakpoint-down(lg) {
 
