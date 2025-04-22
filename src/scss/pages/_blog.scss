@@ -6,12 +6,16 @@
     .left-content {
         height: calc(100vh - 300px);
         top: 170px;
+
+        @include media-breakpoint-down(lg) {
+            height: auto;
+        }
     }
 
     .open-blog-img {
         height: 700px;
 
-        @include media-breakpoint-down(lg){
+        @include media-breakpoint-down(lg) {
             height: 405px;
         }
     }
@@ -19,7 +23,7 @@
     .video-content {
         height: 545px;
 
-        @include media-breakpoint-down(lg){
+        @include media-breakpoint-down(lg) {
             height: 368px;
         }
 
@@ -33,6 +37,20 @@
         .play-btn {
             width: 20px;
         }
+    }
+
+    .featured-title {
+        border-bottom: 1px solid rgba($color: $color-EDE8E3, $alpha: 0.3);
+    }
+
+    @include media-breakpoint-down(lg) {
+        .feature-content {
+            border-bottom: 1px solid rgba($color: $color-EDE8E3, $alpha: 0.3);
+        }
+    }
+
+    .sidebar-img {
+        height: 110px;
     }
 }
 

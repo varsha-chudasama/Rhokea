@@ -1,7 +1,14 @@
 .social-bg {
     height: 38px;
     width: 38px;
-    border: 1px solid $color-EDE8E3;
+
+    &.light-border {
+        border: 1px solid $color-EDE8E3;
+    }
+
+    &.dark-border {
+        border: 1px solid rgba($color: $color-F5F5F5, $alpha: 0.2);
+    }
 
     .social-img {
 
@@ -14,7 +21,7 @@
 .contact-us-section {
     height: calc(100vh - 125px);
 
-    @include media-breakpoint-down(lg){
+    @include media-breakpoint-down(lg) {
         height: 100vh;
 
     }
