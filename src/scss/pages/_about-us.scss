@@ -1,29 +1,24 @@
 .about-hero-section {
-
-    @include media-breakpoint-down(lg) {
-        height: 670px;
-    }
-
+  @include media-breakpoint-down(lg) {
+    height: 670px;
+  }
 }
 
 .the-history-section {
-    .history-img {
-        height: 547px;
+  .history-img {
+    height: 547px;
 
-        @include media-breakpoint-down(lg){
-            height: 257px;
-        }
+    @include media-breakpoint-down(lg) {
+      height: 257px;
     }
+  }
 }
 
-.banner-slider-section{
-    .banner-slider{
-        .banner-img{
-            height: 740px;
-
-            @include media-breakpoint-down(lg){
-                height: 271px;
-            }
-        }
+.banner-slider-section {
+  .banner-slider {
+    height: 740px;
+    @include media-breakpoint-down(lg) {
+      height: 271px;
     }
+  }
 }
