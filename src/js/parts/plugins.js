@@ -6,6 +6,9 @@ export class Plugins {
     this.FindUsSlider();
     this.ShopSlider();
     this.ProductSlider();
+    this.InspirationSlider();
+    this.BasketProductSlider();
+    this.TitaniumSlider();
   }
   FindUsSlider() {
     $(".find-us-slider").slick({
@@ -100,35 +103,73 @@ export class Plugins {
       slidesPerRow: 1,
       arrows: false,
       dots: false,
-      responsive: [ 
+      responsive: [
         {
           breakpoint: 768,
           settings: { slidesToShow: 3 },
         },
-        
+
         {
           breakpoint: 475,
           settings: { slidesToShow: 2 },
         },
       ],
     });
+  }
+  InspirationSlider() {
+    $(".inspiration-slider").slick({
+      slidesToShow: 3,
+      slidesPerRow: 1,
+      arrows: false,
+      dots: false,
+      responsive: [
+        {
+          breakpoint: 768,
+          settings: { slidesToShow: 2 },
+        },
 
+        {
+          breakpoint: 475,
+          settings: { slidesToShow: 1 },
+        },
+      ],
+    });
+  }
+  BasketProductSlider() {
+    $(".basket-product-slider").slick({
+      slidesToShow: 4,
+      slidesPerRow: 1,
+      arrows: false,
+      dots: false,
+      responsive: [
+        {
+          breakpoint: 768,
+          settings: { slidesToShow: 3 },
+        },
 
-    $('.right-content').slick({
+        {
+          breakpoint: 475,
+          settings: { slidesToShow: 2 },
+        },
+      ],
+    });
+  }
+  TitaniumSlider() {
+    $(".why-titanium-right-slider").slick({
       slidesToShow: 1,
+      slidesPerRow: 1,
+      fade: true,
+      arrows: false,
+      dots: false,
+      asNavFor: '.why-titanium-left-slider'
+    });
+    $(".why-titanium-left-slider").slick({
+      vertical: true,
+      slidesToShow: 4,
       slidesToScroll: 1,
       arrows: false,
-      fade: true,
-      asNavFor: '.left-slider'
-    });
-    $('.left-slider').slick({
-      slidesToShow: 5,
-      slidesToScroll: 1,
-      asNavFor: '.right-content',
-      vertical:true,
       dots: false,
-      focusOnSelect: true
+      asNavFor: '.why-titanium-right-slider',focusOnSelect: true
     });
-      
   }
 }

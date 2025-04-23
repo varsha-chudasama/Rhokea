@@ -1,12 +1,38 @@
 .why-titanium-section {
-  .left-image,.right-content {
+  .why-titanium-left-img {
     height: 630px;
+
+    @include media-breakpoint-down(xl) {
+      height: 100% !important;
+    }
   }
-  .right-content{
-    padding: 85px 80px 96px 80px;
-    .logo-img{
-        height: 100px;
-        width: 100px;
+  .why-titanium-logo {
+    height: 99px;
+
+    @include media-breakpoint-down(lg) {
+      height: 81px;
+    }
+  }
+}
+
+.shop-the-look-section {
+  height: 740px;
+
+  @include media-breakpoint-down(lg) {
+    height: 796px;
+  }
+
+  .product-look-cards {
+    background-color: rgba($color: $color-1C1C1C, $alpha: 0.03);
+
+    .product-look-img {
+      width: 86px;
+      height: 103px;
+
+      @include media-breakpoint-down(lg) {
+        width: 70px;
+        height: 89px;
+      }
     }
   }
 }

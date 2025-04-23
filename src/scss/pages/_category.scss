@@ -1,28 +1,28 @@
 .category-content-section {
-    .content-dec {
-        a {
-            font-family: "parabolicatest-medium";
-            color: $color-1C1C1C;
-        }
+  .content-dec {
+    a {
+      font-family: "parabolicatest-medium";
+      color: $color-1C1C1C;
+    }
+  }
+
+  .category-button {
+    height: 38px;
+    padding-inline: 20px;
+    border: 1px solid $color-1C1A1A;
+    margin-right: 15px;
+
+    @include media-breakpoint-down(lg) {
+      height: 30px;
+      margin-right: 10px;
     }
 
-    .category-button {
-        height: 38px;
-        padding-inline: 20px;
-        border: 1px solid $color-1C1A1A;
-        margin-right: 15px;
-
-        @include media-breakpoint-down(lg) {
-            height: 30px;
-            margin-right: 10px;
-        }
-
-        &:last-child {
-            margin-right: 0px !important;
-        }
+    &:last-child {
+      margin-right: 0px !important;
     }
+  }
 }
 
 .divider {
-    border: 1px solid rgba($color: $color-1C1C1C, $alpha: 0.2);
+  border: 1px solid rgba($color: $color-1C1C1C, $alpha: 0.2);
 }

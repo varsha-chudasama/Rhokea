@@ -11,6 +11,7 @@ import { Truncate } from './parts/truncate.js';
 import { Accordion } from './parts/accordion.js';
 import { Privacy } from './parts/privacy.js';
 import { Video } from './parts/video.js';
+import { Quantity } from './parts/quantity';
 
 
 // export for others scripts to use
@@ -45,6 +46,9 @@ $(function () {
 
   window.privacy = new Privacy();
   window.privacy.init();
+
+  window.quantity = new Quantity();
+  window.quantity.init();
 
   window.video = new Video();
   window.video.init();

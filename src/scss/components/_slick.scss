@@ -8,6 +8,16 @@
   }
 }
 
+.basket-product-slider {
+  .slick-list {
+    margin-inline: -9px !important;
+
+    .slick-slide {
+      padding-inline: 9px !important;
+    }
+  }
+}
+
 .find-us-section {
   .slick-arrows {
     .prev-arrow,
@@ -24,6 +34,7 @@
     }
   }
 }
+
 .hero-section {
   .hero-slider {
     margin-bottom: 0;
@@ -54,12 +65,21 @@
 }
 
 .shop-slider,
-.product-slider {
+.product-slider,
+.inspiration-slider {
   .slick-list {
     margin-inline: -3px;
 
+    @include media-breakpoint-down(lg) {
+      margin-inline: -5px;
+    }
+
     .slick-slide {
       padding-inline: 3px;
+
+      @include media-breakpoint-down(lg) {
+        padding-inline: -5px;
+      }
     }
   }
   @include media-breakpoint-down(lg) {
@@ -69,28 +89,19 @@
   }
 }
 
-.why-titanium-section {
-  .left-slider {
-    .slick-slide {
-      .left-text{
-        opacity: 40%;
-      }
-      &.slick-current{
-        .left-text{
-          opacity: 1;
-        }
-      }
-    }
+.inspiration-slider {
+  .slick-track {
+    display: flex;
+    align-items: baseline;
   }
-  .right-content {
-    .slick-list {
-      height: 100%;
-      .slick-track {
-        height: 100%;
-        .slick-slide {
-          & > * {
-            height: 100%;
-          }
+}
+
+.why-titanium-section {
+  .why-titanium-left-slider {
+    .slick-slide {
+      &.slick-active.slick-current {
+        .left-title {
+          opacity: 100%;
         }
       }
     }

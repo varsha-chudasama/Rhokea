@@ -1,30 +1,33 @@
 @font-face {
-    font-family: "parabolicatest-bold";
-    src: url("../../../public/assets/fonts/parabolicatest-bold.otf") format('opentype');
-    font-weight: 400;
+  font-family: "parabolicatest-bold";
+  src: url("../../../public/assets/fonts/parabolicatest-bold.otf")
+    format("opentype");
+  font-weight: 400;
 }
 
 @font-face {
-    font-family: "parabolicatest-medium";
-    src: url("../../../public/assets/fonts/parabolicatest-medium.otf") format('opentype');
-    font-weight: 400;
+  font-family: "parabolicatest-medium";
+  src: url("../../../public/assets/fonts/parabolicatest-medium.otf")
+    format("opentype");
+  font-weight: 400;
 }
 
 @font-face {
-    font-family: "parabolicatexttest-regular";
-    src: url("../../../public/assets/fonts/parabolicatexttest-regular.otf") format('opentype');
-    font-weight: 400;
+  font-family: "parabolicatexttest-regular";
+  src: url("../../../public/assets/fonts/parabolicatexttest-regular.otf")
+    format("opentype");
+  font-weight: 400;
 }
-
 
 .para-bold {
-    font-family: "parabolicatest-bold",'sans-serif';
+  font-family: "parabolicatest-bold", "sans-serif";
 }
 
 .para-med {
-    font-family: "parabolicatest-medium",'sans-serif';
+  font-family: "parabolicatest-medium", "sans-serif";
 }
 
 .para-reg {
-    font-family: "parabolicatexttest-regular",'sans-serif';
+  font-family: "parabolicatexttest-regular", "sans-serif";
 }
+ 

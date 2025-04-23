@@ -1,16 +1,11 @@
 .hero-section{
     height: 100vh;
-    .hero-content{
-        bottom: 132px;
-    }
     
     @include media-breakpoint-down(lg){
         height: 590px;
+        
         .hero-slide{
             height: 590px !important;
-            .hero-content{
-                bottom: 110px;
-            }
         }
     }
 }
