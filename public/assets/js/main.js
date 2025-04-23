@@ -20460,6 +20460,9 @@ var Plugins = /*#__PURE__*/function () {
       this.ShopSlider();
       this.ProductSlider();
       this.BannerSlider();
+      this.InspirationSlider();
+      this.BasketProductSlider();
+      this.TitaniumSlider();
     }
   }, {
     key: "FindUsSlider",
@@ -20560,19 +20563,67 @@ var Plugins = /*#__PURE__*/function () {
           }
         }]
       });
-      $('.right-content').slick({
+    }
+  }, {
+    key: "InspirationSlider",
+    value: function InspirationSlider() {
+      $(".inspiration-slider").slick({
+        slidesToShow: 3,
+        slidesPerRow: 1,
+        arrows: false,
+        dots: false,
+        responsive: [{
+          breakpoint: 768,
+          settings: {
+            slidesToShow: 2
+          }
+        }, {
+          breakpoint: 475,
+          settings: {
+            slidesToShow: 1
+          }
+        }]
+      });
+    }
+  }, {
+    key: "BasketProductSlider",
+    value: function BasketProductSlider() {
+      $(".basket-product-slider").slick({
+        slidesToShow: 4,
+        slidesPerRow: 1,
+        arrows: false,
+        dots: false,
+        responsive: [{
+          breakpoint: 768,
+          settings: {
+            slidesToShow: 3
+          }
+        }, {
+          breakpoint: 475,
+          settings: {
+            slidesToShow: 2
+          }
+        }]
+      });
+    }
+  }, {
+    key: "TitaniumSlider",
+    value: function TitaniumSlider() {
+      $(".why-titanium-right-slider").slick({
         slidesToShow: 1,
+        slidesPerRow: 1,
+        fade: true,
+        arrows: false,
+        dots: false,
+        asNavFor: '.why-titanium-left-slider'
+      });
+      $(".why-titanium-left-slider").slick({
+        vertical: true,
+        slidesToShow: 4,
         slidesToScroll: 1,
         arrows: false,
-        fade: true,
-        asNavFor: '.left-slider'
-      });
-      $('.left-slider').slick({
-        slidesToShow: 5,
-        slidesToScroll: 1,
-        asNavFor: '.right-content',
-        vertical: true,
         dots: false,
+        asNavFor: '.why-titanium-right-slider',
         focusOnSelect: true
       });
     }
@@ -20985,7 +21036,58 @@ var Filter = /*#__PURE__*/function () {
   }]);
   return Filter;
 }();
+;// CONCATENATED MODULE: ./src/js/parts/quantity.js
+function quantity_typeof(obj) { "@babel/helpers - typeof"; return quantity_typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (obj) { return typeof obj; } : function (obj) { return obj && "function" == typeof Symbol && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }, quantity_typeof(obj); }
+function quantity_classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+function quantity_defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, quantity_toPropertyKey(descriptor.key), descriptor); } }
+function quantity_createClass(Constructor, protoProps, staticProps) { if (protoProps) quantity_defineProperties(Constructor.prototype, protoProps); if (staticProps) quantity_defineProperties(Constructor, staticProps); Object.defineProperty(Constructor, "prototype", { writable: false }); return Constructor; }
+function quantity_toPropertyKey(arg) { var key = quantity_toPrimitive(arg, "string"); return quantity_typeof(key) === "symbol" ? key : String(key); }
+function quantity_toPrimitive(input, hint) { if (quantity_typeof(input) !== "object" || input === null) return input; var prim = input[Symbol.toPrimitive]; if (prim !== undefined) { var res = prim.call(input, hint || "default"); if (quantity_typeof(res) !== "object") return res; throw new TypeError("@@toPrimitive must return a primitive value."); } return (hint === "string" ? String : Number)(input); }
+var Quantity = /*#__PURE__*/function () {
+  function Quantity() {
+    quantity_classCallCheck(this, Quantity);
+  }
+  quantity_createClass(Quantity, [{
+    key: "init",
+    value: function init() {
+      this.PlusMinusQuantity();
+    }
+  }, {
+    key: "PlusMinusQuantity",
+    value: function PlusMinusQuantity() {
+      $(document).ready(function () {
+        var $plus = $(".plus"),
+          $minus = $(".minus"),
+          $num = $(".num");
+        if (localStorage["num"]) {
+          $num.text(localStorage.getItem("num"));
+        } else {
+          var a = "1";
+          $num.text(a);
+        }
+        $plus.on("click", function () {
+          var a = parseInt($num.text(), 10);
+          a++;
+          a = a < 10 ? a : a.toString();
+          localStorage.setItem("num", a);
+          $num.text(localStorage.getItem("num"));
+        });
+        $minus.on("click", function () {
+          var a = parseInt($num.text(), 10);
+          if (a > 1) {
+            a--;
+            a = a < 10 ? a : a.toString();
+            localStorage.setItem("num", a);
+            $num.text(localStorage.getItem("num"));
+          }
+        });
+      });
+    }
+  }]);
+  return Quantity;
+}();
 ;// CONCATENATED MODULE: ./src/js/main.js
+
 
 
 
@@ -21025,6 +21127,8 @@ jquery_default()(function () {
   window.accordion.init();
   window.privacy = new Privacy();
   window.privacy.init();
+  window.quantity = new Quantity();
+  window.quantity.init();
   window.video = new Video();
   window.video.init();
   window.filter = new Filter();

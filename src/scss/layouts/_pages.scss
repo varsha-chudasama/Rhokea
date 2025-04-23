@@ -1,0 +1,13 @@
+.payment-icons {
+  ul {
+    li {
+      height: 24px;
+      &:first-child {
+        margin-left: 0px !important;
+      }
+      &:last-child {
+        margin-right: 0px !important;
+      }
+    }
+  }
+}

@@ -7,27 +7,27 @@
 // @import "../../node_modules/@fancyapps/ui";
 //@import "~fancybox/dist/scss/jquery.fancybox.scss";
 // Select2
-@import '../../node_modules/select2/dist/css/select2.min.css';
+@import "../../node_modules/select2/dist/css/select2.min.css";
 // Animation
-@import '../../node_modules/animate.css/animate.min.css';
+@import "../../node_modules/animate.css/animate.min.css";
 // Automatically injected Bower dependencies via wiredep (never manually edit this block)
 // bower:scss
-@import '../../node_modules/bootstrap/scss/functions';
-@import '../../node_modules/bootstrap/scss/variables';
+@import "../../node_modules/bootstrap/scss/functions";
+@import "../../node_modules/bootstrap/scss/variables";
 $grid-breakpoints: (
   xs: 0,
   sm: 576px,
   md: 768px,
   lg: 992px,
   xl: 1200px,
-  xxl: 1400px
+  xxl: 1400px,
 );
-@import '../../node_modules/bootstrap/scss/mixins';
-@import '../../node_modules/bootstrap/scss/reboot';
-@import '../../node_modules/bootstrap/scss/grid';
-@import '../../node_modules/bootstrap/scss/utilities';
+@import "../../node_modules/bootstrap/scss/mixins";
+@import "../../node_modules/bootstrap/scss/reboot";
+@import "../../node_modules/bootstrap/scss/grid";
+@import "../../node_modules/bootstrap/scss/utilities";
 @import "../../node_modules/slick-carousel/slick/slick.scss";
-//fancybox 
+//fancybox
 @import "@fancyapps/ui/dist/fancybox.css";
 // endbower
 @import "common/_fonts";
@@ -54,3 +54,4 @@ $grid-breakpoints: (
 @import "pages/_blog";
 @import "pages/_blog-open";
 @import "pages/_about-us";
+@import "pages/_basket";
