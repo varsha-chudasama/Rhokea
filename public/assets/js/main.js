@@ -20459,6 +20459,7 @@ var Plugins = /*#__PURE__*/function () {
       this.FindUsSlider();
       this.ShopSlider();
       this.ProductSlider();
+      this.BannerSlider();
     }
   }, {
     key: "FindUsSlider",
@@ -20573,6 +20574,27 @@ var Plugins = /*#__PURE__*/function () {
         vertical: true,
         dots: false,
         focusOnSelect: true
+      });
+    }
+  }, {
+    key: "BannerSlider",
+    value: function BannerSlider() {
+      $(".banner-slider").slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        infinite: false,
+        dots: true,
+        arrows: true,
+        prevArrow: ".banner-slider-section .prev-arrow",
+        nextArrow: ".banner-slider-section .next-arrow",
+        responsive: [{
+          breakpoint: 768,
+          settings: {
+            arrows: true,
+            slidesToShow: 1,
+            dots: false
+          }
+        }]
       });
     }
   }]);
@@ -20928,7 +20950,43 @@ var Video = /*#__PURE__*/function () {
   }]);
   return Video;
 }();
+;// CONCATENATED MODULE: ./src/js/parts/filter.js
+function filter_typeof(obj) { "@babel/helpers - typeof"; return filter_typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (obj) { return typeof obj; } : function (obj) { return obj && "function" == typeof Symbol && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }, filter_typeof(obj); }
+function filter_classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+function filter_defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, filter_toPropertyKey(descriptor.key), descriptor); } }
+function filter_createClass(Constructor, protoProps, staticProps) { if (protoProps) filter_defineProperties(Constructor.prototype, protoProps); if (staticProps) filter_defineProperties(Constructor, staticProps); Object.defineProperty(Constructor, "prototype", { writable: false }); return Constructor; }
+function filter_toPropertyKey(arg) { var key = filter_toPrimitive(arg, "string"); return filter_typeof(key) === "symbol" ? key : String(key); }
+function filter_toPrimitive(input, hint) { if (filter_typeof(input) !== "object" || input === null) return input; var prim = input[Symbol.toPrimitive]; if (prim !== undefined) { var res = prim.call(input, hint || "default"); if (filter_typeof(res) !== "object") return res; throw new TypeError("@@toPrimitive must return a primitive value."); } return (hint === "string" ? String : Number)(input); }
+var Filter = /*#__PURE__*/function () {
+  function Filter() {
+    filter_classCallCheck(this, Filter);
+  }
+  filter_createClass(Filter, [{
+    key: "init",
+    value: function init() {
+      this.ProjectFilter();
+    }
+  }, {
+    key: "ProjectFilter",
+    value: function ProjectFilter() {
+      $(".filter-button").click(function () {
+        var value = $(this).attr('data-filter');
+        if (value == "all") {
+          $('.filter').show('500');
+        } else {
+          $('.filter').not('.' + value).hide('1000');
+          $('.filter').filter('.' + value).show('1000');
+        }
+      });
+      $(".filter-button").click(function () {
+        $(this).addClass("active").siblings().removeClass("active");
+      });
+    }
+  }]);
+  return Filter;
+}();
 ;// CONCATENATED MODULE: ./src/js/main.js
+
 
 
 
@@ -20969,6 +21027,8 @@ jquery_default()(function () {
   window.privacy.init();
   window.video = new Video();
   window.video.init();
+  window.filter = new Filter();
+  window.filter.init();
 });
 
 // ===========================================================================

@@ -6,6 +6,7 @@ export class Plugins {
     this.FindUsSlider();
     this.ShopSlider();
     this.ProductSlider();
+    this.BannerSlider();
   }
   FindUsSlider() {
     $(".find-us-slider").slick({
@@ -100,12 +101,12 @@ export class Plugins {
       slidesPerRow: 1,
       arrows: false,
       dots: false,
-      responsive: [ 
+      responsive: [
         {
           breakpoint: 768,
           settings: { slidesToShow: 3 },
         },
-        
+
         {
           breakpoint: 475,
           settings: { slidesToShow: 2 },
@@ -125,10 +126,31 @@ export class Plugins {
       slidesToShow: 5,
       slidesToScroll: 1,
       asNavFor: '.right-content',
-      vertical:true,
+      vertical: true,
       dots: false,
       focusOnSelect: true
     });
-      
+
+  }
+  BannerSlider() {
+    $(".banner-slider").slick({
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      infinite: false,
+      dots: true,
+      arrows: true,
+      prevArrow: ".banner-slider-section .prev-arrow",
+      nextArrow: ".banner-slider-section .next-arrow",
+      responsive: [
+        {
+          breakpoint: 768,
+          settings: {
+            arrows: true,
+            slidesToShow: 1,
+            dots: false,
+          },
+        },
+      ],
+    });
   }
 }

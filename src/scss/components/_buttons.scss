@@ -45,3 +45,22 @@ button,
         }
     }
 }
+
+.btnZ {
+    height: 64px;
+
+    @include media-breakpoint-down(lg){
+        height: 58px;
+    }
+
+    &.bg-1C1A1A-btn {
+        background-color: transparent;
+        border: 1px solid $color-1C1C1C;
+
+        &:hover {
+            background-color: $color-1C1C1C;
+            border: 1px solid transparent;
+            color: $white !important;
+        }
+    }
+}
