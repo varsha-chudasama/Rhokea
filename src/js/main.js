@@ -11,6 +11,7 @@ import { Truncate } from './parts/truncate.js';
 import { Accordion } from './parts/accordion.js';
 import { Privacy } from './parts/privacy.js';
 import { Video } from './parts/video.js';
+import { Filter } from './parts/filter.js';
 import { Quantity } from './parts/quantity';
 
 
@@ -52,6 +53,9 @@ $(function () {
 
   window.video = new Video();
   window.video.init();
+
+  window.filter = new Filter();
+  window.filter.init();
 });
 
 // ===========================================================================

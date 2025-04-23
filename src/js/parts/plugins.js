@@ -6,6 +6,7 @@ export class Plugins {
     this.FindUsSlider();
     this.ShopSlider();
     this.ProductSlider();
+    this.BannerSlider();
     this.InspirationSlider();
     this.BasketProductSlider();
     this.TitaniumSlider();
@@ -169,7 +170,29 @@ export class Plugins {
       slidesToScroll: 1,
       arrows: false,
       dots: false,
-      asNavFor: '.why-titanium-right-slider',focusOnSelect: true
+      asNavFor: '.why-titanium-right-slider', focusOnSelect: true
+    });
+
+  }
+  BannerSlider() {
+    $(".banner-slider").slick({
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      infinite: false,
+      dots: true,
+      arrows: true,
+      prevArrow: ".banner-slider-section .prev-arrow",
+      nextArrow: ".banner-slider-section .next-arrow",
+      responsive: [
+        {
+          breakpoint: 768,
+          settings: {
+            arrows: true,
+            slidesToShow: 1,
+            dots: false,
+          },
+        },
+      ],
     });
   }
 }
