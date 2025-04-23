@@ -18067,6 +18067,15 @@ button,
   color: #1c1c1c;
   border: 1px solid #1c1c1c;
 }
+.btnA.border-1C1C1C-btn {
+  background-color: transparent;
+  color: #1c1c1c;
+  border: 1px solid #1c1c1c;
+}
+.btnA.border-1C1C1C-btn:hover {
+  background-color: #1c1c1c;
+  color: #ede8e3;
+}
 
 .switch-container {
   height: 16px;
