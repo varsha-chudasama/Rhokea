@@ -13,6 +13,8 @@ import { Privacy } from './parts/privacy.js';
 import { Video } from './parts/video.js';
 import { Filter } from './parts/filter.js';
 import { Quantity } from './parts/quantity';
+import { Select } from './parts/select.js';
+import { Header } from './parts/header.js';
 
 
 // export for others scripts to use
@@ -56,6 +58,13 @@ $(function () {
 
   window.filter = new Filter();
   window.filter.init();
+
+  window.select = new Select();
+  window.select.init();
+
+  window.header = new Header();
+  window.header.init();
+
 });
 
 // ===========================================================================

@@ -20682,7 +20682,21 @@ var Parts = /*#__PURE__*/function () {
   }
   parts_createClass(Parts, [{
     key: "init",
-    value: function init() {}
+    value: function init() {
+      $(document).ready(function () {
+        var stickySection = $('.sticky-section');
+        $(window).on('scroll', function () {
+          var scrollableHeight = $(document).height() - $(window).height();
+          if ($(window).scrollTop() === 0) {
+            stickySection.removeClass('d-block').addClass('d-block');
+          } else if ($(window).scrollTop() >= scrollableHeight - 1250) {
+            stickySection.removeClass('d-none').addClass('d-none');
+          } else {
+            stickySection.removeClass('d-none').addClass('d-block');
+          }
+        });
+      });
+    }
   }]);
   return Parts;
 }();
@@ -21104,7 +21118,63 @@ var Quantity = /*#__PURE__*/function () {
   }]);
   return Quantity;
 }();
+;// CONCATENATED MODULE: ./src/js/parts/select.js
+function select_typeof(obj) { "@babel/helpers - typeof"; return select_typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (obj) { return typeof obj; } : function (obj) { return obj && "function" == typeof Symbol && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }, select_typeof(obj); }
+function select_classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+function select_defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, select_toPropertyKey(descriptor.key), descriptor); } }
+function select_createClass(Constructor, protoProps, staticProps) { if (protoProps) select_defineProperties(Constructor.prototype, protoProps); if (staticProps) select_defineProperties(Constructor, staticProps); Object.defineProperty(Constructor, "prototype", { writable: false }); return Constructor; }
+function select_toPropertyKey(arg) { var key = select_toPrimitive(arg, "string"); return select_typeof(key) === "symbol" ? key : String(key); }
+function select_toPrimitive(input, hint) { if (select_typeof(input) !== "object" || input === null) return input; var prim = input[Symbol.toPrimitive]; if (prim !== undefined) { var res = prim.call(input, hint || "default"); if (select_typeof(res) !== "object") return res; throw new TypeError("@@toPrimitive must return a primitive value."); } return (hint === "string" ? String : Number)(input); }
+var Select = /*#__PURE__*/function () {
+  function Select() {
+    select_classCallCheck(this, Select);
+  }
+  select_createClass(Select, [{
+    key: "init",
+    value: function init() {
+      $(document).ready(function () {
+        $(".js-select2").select2({
+          closeOnSelect: true,
+          minimumResultsForSearch: Infinity,
+          allowClear: false,
+          dropdownCssClass: "categories-select2"
+        });
+      });
+    }
+  }]);
+  return Select;
+}();
+;// CONCATENATED MODULE: ./src/js/parts/header.js
+function header_typeof(obj) { "@babel/helpers - typeof"; return header_typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (obj) { return typeof obj; } : function (obj) { return obj && "function" == typeof Symbol && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }, header_typeof(obj); }
+function header_classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+function header_defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, header_toPropertyKey(descriptor.key), descriptor); } }
+function header_createClass(Constructor, protoProps, staticProps) { if (protoProps) header_defineProperties(Constructor.prototype, protoProps); if (staticProps) header_defineProperties(Constructor, staticProps); Object.defineProperty(Constructor, "prototype", { writable: false }); return Constructor; }
+function header_toPropertyKey(arg) { var key = header_toPrimitive(arg, "string"); return header_typeof(key) === "symbol" ? key : String(key); }
+function header_toPrimitive(input, hint) { if (header_typeof(input) !== "object" || input === null) return input; var prim = input[Symbol.toPrimitive]; if (prim !== undefined) { var res = prim.call(input, hint || "default"); if (header_typeof(res) !== "object") return res; throw new TypeError("@@toPrimitive must return a primitive value."); } return (hint === "string" ? String : Number)(input); }
+var Header = /*#__PURE__*/function () {
+  function Header() {
+    header_classCallCheck(this, Header);
+  }
+  header_createClass(Header, [{
+    key: "init",
+    value: function init() {
+      this.HeaderMenu();
+    }
+  }, {
+    key: "HeaderMenu",
+    value: function HeaderMenu() {
+      $(document).ready(function () {
+        $(".burger-menues").click(function () {
+          $(this).addClass("header-active");
+        });
+      });
+    }
+  }]);
+  return Header;
+}();
 ;// CONCATENATED MODULE: ./src/js/main.js
+
+
 
 
 
@@ -21151,6 +21221,10 @@ jquery_default()(function () {
   window.video.init();
   window.filter = new Filter();
   window.filter.init();
+  window.select = new Select();
+  window.select.init();
+  window.header = new Header();
+  window.header.init();
 });
 
 // ===========================================================================

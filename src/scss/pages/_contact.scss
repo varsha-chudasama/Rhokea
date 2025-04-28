@@ -19,10 +19,8 @@
 }
 
 .contact-us-section {
-    height: calc(100vh - 125px);
 
     @include media-breakpoint-down(lg) {
         height: 100vh;
-
     }
 }

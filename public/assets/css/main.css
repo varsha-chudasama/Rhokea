@@ -18106,11 +18106,9 @@ button,
   border-radius: 50%;
 }
 
-input {
-  height: 48px;
-}
 input.dark-input {
-  background: rgba(28, 28, 28, 0.2);
+  height: 48px;
+  background: rgba(28, 28, 28, 0.1);
   color: #1c1c1c !important;
 }
 input.dark-input::placeholder {
@@ -18119,6 +18117,7 @@ input.dark-input::placeholder {
   color: #1c1c1c !important;
 }
 input.light-input {
+  height: 48px;
   background: rgba(237, 232, 227, 0.2);
   color: #ede8e3 !important;
 }
@@ -18128,10 +18127,21 @@ input.light-input::placeholder {
   color: #ede8e3 !important;
 }
 input.white-input {
+  height: 48px;
   background: rgba(255, 255, 255, 0.4);
   color: #ede8e3 !important;
 }
 input.white-input::placeholder {
+  font-family: "parabolicatexttest-regular";
+  opacity: 1;
+  color: #ede8e3 !important;
+}
+input.header-input {
+  height: 41px;
+  background-color: rgba(255, 255, 255, 0.2);
+  color: #ede8e3 !important;
+}
+input.header-input::placeholder {
   font-family: "parabolicatexttest-regular";
   opacity: 1;
   color: #ede8e3 !important;
@@ -18147,6 +18157,70 @@ textarea::placeholder {
   color: #ede8e3 !important;
 }
 
+.select2-container {
+  cursor: pointer;
+}
+.select2-container .select2-selection--single[aria-expanded=true] {
+  border-radius: 0;
+  border-bottom: 0 !important;
+}
+.select2-container .select2-selection--single[aria-expanded=true] .select2-selection__arrow {
+  transform: rotate(180deg);
+}
+.select2-container .select2-selection--single {
+  height: 100% !important;
+  border-radius: 0;
+  border: none;
+  background-color: transparent;
+}
+.select2-container .select2-selection--single .select2-selection__rendered {
+  height: 100% !important;
+  padding: 0;
+  font-family: "hanken-grotesk", sans-serif;
+}
+@media (max-width: 991.98px) {
+  .select2-container .select2-selection--single .select2-selection__rendered {
+    padding-bottom: 15px;
+  }
+}
+.select2-container .select2-selection--single .select2-selection__rendered .select2-selection__placeholder {
+  font-family: "hanken-grotesk", sans-serif;
+}
+.select2-container .select2-selection--single .select2-selection__arrow {
+  height: 100%;
+  top: 0;
+  right: 9px;
+  width: 11px;
+  height: 16px;
+  background-image: url("../images/black-down-arrow.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  transition: all 0.3s ease-in-out;
+}
+.select2-container .select2-selection--single .select2-selection__arrow b {
+  display: none !important;
+}
+
+.categories-select2 {
+  overflow: hidden;
+  margin-top: -1px;
+  border-radius: 0 !important;
+}
+.categories-select2 ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+.categories-select2 ul li {
+  padding: 10px 0px 10px 0px;
+  font-family: "parabolicatexttest-regular", "sans-serif";
+  font-size: 14px;
+  color: #1c1c1c;
+  font-family: "hanken-grotesk", sans-serif;
+}
+.categories-select2 .select2-search__field {
+  display: none;
+}
 .card-hover .img {
   transform: scale(1) !important;
   transition: 0.3s all ease-in-out;
@@ -18392,6 +18466,46 @@ textarea::placeholder {
   height: 100%;
 }
 
+.header .inner-header ul li:last-child {
+  margin-right: 0 !important;
+}
+.header .transparent-header .cart-img {
+  height: 28px;
+}
+.header .transparent-header .white-logo {
+  width: 147px;
+}
+.header .transparent-header .white-arrow {
+  width: 19px;
+}
+.header .transparent-header .white-search-img {
+  width: 22px;
+}
+@media (max-width: 991.98px) {
+  .header .transparent-header {
+    background-color: #ede8e3;
+  }
+  .header .transparent-header .black-heart-img {
+    width: 20px;
+  }
+  .header .transparent-header .black-cart-img {
+    width: 22px;
+  }
+  .header .transparent-header .burger-menu {
+    width: 22px;
+  }
+  .header .transparent-header .black-search-input,
+  .header .transparent-header .black-close {
+    width: 22px;
+  }
+}
+.header.header-active .burger-menu {
+  display: none;
+}
+.header.header-active .black-close {
+  display: block !important;
+}
+
 .footer {
   height: 615px;
 }
@@ -18564,9 +18678,6 @@ textarea::placeholder {
   width: 15px;
 }
 
-.contact-us-section {
-  height: calc(100vh - 125px);
-}
 @media (max-width: 991.98px) {
   .contact-us-section {
     height: 100vh;

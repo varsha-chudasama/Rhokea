@@ -1,0 +1,61 @@
+.header {
+
+    .inner-header {
+        ul {
+            li {
+                &:last-child {
+                    margin-right: 0 !important;
+                }
+            }
+        }
+    }
+
+    .transparent-header {
+        .cart-img {
+            height: 28px;
+        }
+
+        .white-logo {
+            width: 147px;
+        }
+
+        .white-arrow {
+            width: 19px;
+        }
+
+        .white-search-img {
+            width: 22px;
+        }
+
+        @include media-breakpoint-down(lg) {
+            background-color: $color-EDE8E3;
+
+            .black-heart-img {
+                width: 20px;
+            }
+
+            .black-cart-img {
+                width: 22px;
+            }
+
+            .burger-menu {
+                width: 22px;
+            }
+
+            .black-search-input,
+            .black-close {
+                width: 22px;
+            }
+        }
+    }
+
+    &.header-active {
+        .burger-menu {
+            display: none;
+        }
+
+        .black-close {
+            display: block !important;
+        }
+    }
+}
