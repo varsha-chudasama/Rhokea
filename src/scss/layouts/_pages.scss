@@ -11,3 +11,12 @@
     }
   }
 }
+
+.category-content-section,
+.blog-cards-section {
+  .filter-data {
+    @include media-breakpoint-down(lg) {
+      padding-left: 11px;
+    }
+  }
+}

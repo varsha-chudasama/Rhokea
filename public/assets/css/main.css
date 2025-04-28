@@ -18443,6 +18443,13 @@ textarea::placeholder {
   margin-right: 0px !important;
 }
 
+@media (max-width: 991.98px) {
+  .category-content-section .filter-data,
+  .blog-cards-section .filter-data {
+    padding-left: 11px;
+  }
+}
+
 .why-titanium-section .why-titanium-left-img {
   height: 630px;
 }
@@ -18582,11 +18589,6 @@ textarea::placeholder {
   }
 }
 
-@media (max-width: 991.98px) {
-  .blog-cards-section .filter-data {
-    padding-left: 11px;
-  }
-}
 .blog-cards-section .filter-data .filter-button {
   height: 36px;
   background-color: rgba(28, 28, 28, 0.1);
